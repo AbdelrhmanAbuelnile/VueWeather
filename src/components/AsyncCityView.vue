@@ -46,7 +46,7 @@
         <img
           class="w-[150px] h-auto"
           :src="
-            `http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`
+            `https://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`
           "
           :alt="weatherData.current.weather[0].icon"
         />
@@ -76,7 +76,7 @@
               <img
                 class="w-auto h-[50px] object-cover"
                 :src="
-                  `http://openweathermap.org/img/wn/${hourData.weather[0].icon}@2x.png`
+                  `https://openweathermap.org/img/wn/${hourData.weather[0].icon}@2x.png`
                 "
                 alt=""
               />
@@ -112,7 +112,7 @@
             <img
               class="w-[50px] h-[50px] object-cover"
               :src="
-                `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
+                `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
               "
               alt=""
             />
