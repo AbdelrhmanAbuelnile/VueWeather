@@ -5,7 +5,7 @@
     >
       <RouterLink :to="{ name: 'home' }">
         <div class="flex items-center gap-3">
-          <i class="fa-solid fa-sun text-2xl"></i>
+          <i class="fa-solid fa-sun text-2xl hover:rotate-[360deg] duration-300"></i>
           <p class="text-2xl">The Local Weather</p>
         </div>
       </RouterLink>

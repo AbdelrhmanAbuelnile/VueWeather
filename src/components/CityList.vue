@@ -1,5 +1,5 @@
 <template>
-    <div v-for="city in savedCities" :key="city.id">
+    <div v-for="city in savedCities" :key="city.id" class="mb-[5px]">
       <CityCard :city="city" @click="goToCityView(city)" />
     </div>
   
@@ -32,6 +32,8 @@
       });
   
       const weatherData = await Promise.all(requests);
+
+      await new Promise((res) => setTimeout(res, 1000))
   
       weatherData.forEach((value, index) => {
         savedCities.value[index].weather = value.data;
